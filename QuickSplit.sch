@@ -92,31 +92,7 @@ USB_DP
 Text GLabel 1800 1100 2    50   BiDi ~ 0
 USB_DM
 Wire Wire Line
-	1550 1000 1600 1000
-Wire Wire Line
 	1550 1100 1800 1100
-$Comp
-L Device:R_Small R?
-U 1 1 5B6BCE03
-P 1750 800
-F 0 "R?" V 1554 800 50  0000 C CNN
-F 1 "1.5k" V 1645 800 50  0000 C CNN
-F 2 "" H 1750 800 50  0001 C CNN
-F 3 "~" H 1750 800 50  0001 C CNN
-	1    1750 800 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1600 1000 1600 800 
-Wire Wire Line
-	1600 800  1650 800 
-Connection ~ 1600 1000
-Wire Wire Line
-	1600 1000 1800 1000
-Wire Wire Line
-	1850 800  2050 800 
-Wire Wire Line
-	2050 800  2050 700 
 $Comp
 L Connector:RJ9 J?
 U 1 1 5B6BD28A
@@ -475,17 +451,6 @@ Wire Wire Line
 	4300 3500 4550 3500
 Wire Wire Line
 	4300 3600 4550 3600
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5B6CD9D6
-P 2050 700
-F 0 "#PWR?" H 2050 550 50  0001 C CNN
-F 1 "+3.3V" H 2065 873 50  0000 C CNN
-F 2 "" H 2050 700 50  0001 C CNN
-F 3 "" H 2050 700 50  0001 C CNN
-	1    2050 700 
-	1    0    0    -1  
-$EndComp
 Text GLabel 2850 1200 0    50   BiDi ~ 0
 NRST
 Wire Wire Line
@@ -2072,4 +2037,6 @@ Wire Wire Line
 	9600 2350 9650 2350
 Wire Wire Line
 	9600 1750 9650 1750
+Wire Wire Line
+	1550 1000 1800 1000
 $EndSCHEMATC
